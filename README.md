@@ -26,18 +26,21 @@ Users of the System
 5.	Can logout
 Diagrams
 1.Data Flow Diagram
- 
+ ![](ssofpr/Screenshot134.png)
 
 
 2.Activity Diagrams
 •	Login Process
 
- 
+ ![](ssofpr/Screenshot135.png)
+
 •	Registration Process :
  
+![](ssofpr/Screenshot136.png)
 
 
 •	Login Activity
+![](ssofpr/Screenshot137.png)
 
 
  
@@ -45,11 +48,21 @@ Diagrams
 
 
 OUTPUT SCREENS
-
-Welcome Page
  
 
- 
+![](ssofpr/Screenshot125.png)
+![](ssofpr/Screenshot126.png)
+![](ssofpr/Screenshot127.png)
+![](ssofpr/Screenshot128.png)
+![](ssofpr/Screenshot129.png)
+![](ssofpr/Screenshot130.png)
+![](ssofpr/Screenshot131.png)
+![](ssofpr/Screenshot132.png)
+![](ssofpr/Screenshot133.png)
+
+
+
+
  
  
  

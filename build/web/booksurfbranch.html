@@ -1,0 +1,131 @@
+ 
+      <center>
+  <h3 style="color:#0000cc">Search Book</h3>
+  <form  style="width:300px" >
+  <div class="form-group">
+    <label for="email1">Select Branch:</label> 
+    <select class="form-control" name="branch" id="branch" placeholder="Branch">
+        <option value="0" onclick="subject()">Choose</option>
+        <option value="CSE" onclick="subject()">CSE</option>
+  <option value="ME" onclick="subject()">ME</option>
+  <option value="IT" onclick="subject()">IT</option>
+  <option value="EE" onclick="subject()">EE</option>
+</select> 
+  </div>
+      
+      
+  <div class="form-group">
+    <label for="password1" id="subl">Select Subject:</label>
+      <select class="form-control" name="Subject1" id="cseSub" placeholder="Subject">
+          <option value="0" >Choose</option>
+  <option value="OS">OS</option>
+  <option value="JAVA">JAVA</option>
+  <option value="Cpp">C++</option>
+  <option value="DS">DS</option>
+</select> 
+    
+    <select class="form-control" name="Subject2" id="meSub" placeholder="Subject">
+        <option value="0" >Choose</option>
+  <option value="M">Maths</option>
+  <option value="Ph">Physics</option>
+  <option value="Ch">Chemistry</option>
+  <option value="ML">MATLAB</option>
+</select> 
+    
+    <select class="form-control" name="Subject3" id="itSub" placeholder="Subject">
+        <option value="0" >Choose</option>
+  <option value="os">OS</option>
+  <option value="java">JAVA</option>
+  <option value="cpp">C++</option>
+  <option value="ds">DS</option>
+</select> 
+    
+    <select class="form-control" name="Subject4" id="eeSub" placeholder="Subject">
+        <option value="0" >Choose</option>
+  <option value="Ph">Physics</option>
+  <option value="M">Maths</option>
+  <option value="Ch">Chemistry</option>
+  <option value="ML">MATLAB</option>
+</select>   
+  </div>  
+   <button type="submit" formaction="Ebooks" class="btn btn-primary" style="background-color:greenyellow;color:black" id="search">Search</button>
+      
+</form>
+      </center>
+ <script>
+ 
+    function  view(){ 
+      
+        if(document.getElementById("branch").value==='0'){
+      document.getElementById("cseSub").style.visibility = 'hidden';
+     document.getElementById("meSub").style.visibility = 'hidden';
+     document.getElementById("itSub").style.visibility = 'hidden';
+     document.getElementById("eeSub").style.visibility = 'hidden';
+     document.getElementById("search").style.visibility = 'hidden';
+     document.getElementById("subl").style.visibility = 'hidden';
+     
+     
+     
+ }else{
+     
+ }
+ }
+ 
+ 
+     
+function subject() {
+  
+  var x = document.getElementById("branch").value;
+  
+  if (x === 'CSE') {
+     document.getElementById("cseSub").style.visibility = 'visible';
+     document.getElementById("search").style.visibility = 'visible';
+     document.getElementById("subl").style.visibility = 'visible';
+     document.getElementById("meSub").style.visibility = 'hidden';
+     document.getElementById("itSub").style.visibility = 'hidden';
+     document.getElementById("eeSub").style.visibility = 'hidden'; 
+     
+     document.getElementById("meSub").value = '0';
+     document.getElementById("itSub").value = '0';
+     document.getElementById("eeSub").value = '0';
+     
+  } else if (x === 'ME'){
+    document.getElementById("cseSub").style.visibility = 'hidden';
+     document.getElementById("meSub").style.visibility = 'visible';
+     document.getElementById("search").style.visibility = 'visible';
+     document.getElementById("subl").style.visibility = 'visible';
+     document.getElementById("itSub").style.visibility = 'hidden';
+     document.getElementById("eeSub").style.visibility = 'hidden';
+     
+     document.getElementById("cseSub").value = '0';
+     document.getElementById("itSub").value = '0';
+     document.getElementById("eeSub").value = '0';
+     
+  }else if (x === 'IT'){
+    document.getElementById("cseSub").style.visibility = 'hidden';
+     document.getElementById("meSub").style.visibility = 'hidden';
+     document.getElementById("itSub").style.visibility = 'visible';
+     document.getElementById("search").style.visibility = 'visible';
+     document.getElementById("subl").style.visibility = 'visible';
+     document.getElementById("eeSub").style.visibility = 'hidden';
+     
+     document.getElementById("meSub").value = '0';
+     document.getElementById("cseSub").value = '0';
+     document.getElementById("eeSub").value = '0';
+     
+  }else if (x === 'EE'){
+    document.getElementById("cseSub").style.visibility = 'hidden';
+     document.getElementById("meSub").style.visibility = 'hidden';
+     document.getElementById("itSub").style.visibility = 'hidden';
+     document.getElementById("eeSub").style.visibility = 'visible';
+     document.getElementById("search").style.visibility = 'visible';
+     document.getElementById("subl").style.visibility = 'visible';
+     
+     document.getElementById("meSub").value = '0';
+     document.getElementById("itSub").value = '0';
+     document.getElementById("cseSub").value = '0';
+     
+  }
+}
+view();
+</script>
